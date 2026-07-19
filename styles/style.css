@@ -90,7 +90,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255 0 112 / 0.4);
+  border: 1px solid var(--border-menu-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -108,9 +108,9 @@
 
 .title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: rgb(219 0 255 / 1);
+  color: var(--title-color);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--title-shadow);
 }
 
 .header__description {
@@ -174,7 +174,7 @@
 
 .content__text-link {
   text-decoration: none;
-  text-shadow: 1.5px 1.5px 0 var(--accent-color);
+  text-shadow: 1.5px 1.5px 0 var(--tx-shadow);
 }
 
 .content__text-link:hover {
@@ -223,7 +223,7 @@
 .footer__content {
   color: var(--footer-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--footer-shadow);
   line-height: 83%;
   font-weight: var(--font-weight-accent);
 }
@@ -386,4 +386,4 @@
 
   .footer__content {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-}
+  }
