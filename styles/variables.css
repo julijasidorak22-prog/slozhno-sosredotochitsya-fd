@@ -1,29 +1,43 @@
 :root {
-  --bg-image: url(../images/cover-image-dark.png);
+  /* Цвета */
   --bg-color: rgb(0 0 40 / 1);
-  --container-padding: 10px;
-  --main-font: 'IBM Plex Mono', monospace;
   --tx-color: rgb(241 178 206 / 1);
-  --tx-color-accent: rgb(0 0 40 / 1);
   --accent-color: rgb(255 0 112 / 1);
+  --bg-color-accent: rgb(255 0 112 / 1);
+  --footer-color: rgb(219 0 255 / 1);
+  --title-color: rgb(219 0 255 / 1);
+  --border-menu-hover: rgb(255 0 112 / 0.4);
+  --tx-color-accent: rgb(0 0 40 / 1);
+
+  /* Шрифты */
+  --main-font: "IBM Plex Mono", monospace;
+  --font-size: 18px;
   --font-weight: 400;
   --font-weight-accent: 700;
-  --font-size: 18px;
-  --bg-color-accent: rgb(255 0 112 / 1);
+
+  /* Отступы и расстояния */
+  --container-padding: 10px;
   --main-gap: 50px;
-  --footer-color: rgb(219 0 255 / 1);
-  --decor-top: 10px;
-  --decor-right: 10px;
-  --decor-bottom: 10px;
-  --decor-left: 10px;
-  --tx-right-rec: 20px;
-  --tx-left-rec: 304px;
-  --tx-decor-left: 347px;
-  --tx-top-rec: 18px;
   --gallery-gap: 10px;
-  --title-color: rgb(219 0 255 / 1);
+
+  /* Фоновые элементы */
+  --bg-image: url(../images/cover-image-dark.png);
+
+  /* Декоративные параметры и позиции */
+  --gap-rec: 10px;
+  --display-rec: block;
+
+  /* Тени */
   --title-shadow: rgb(255 0 112 / 1);
   --footer-shadow: rgb(255 0 112 / 1);
   --tx-shadow: rgb(255 0 112 / 1);
-  --border-menu-hover: rgb(255 0 112 / 0.4);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 20px;
+    --gap-rec: 20px;
+    --main-gap: 80px;
+    --gallery-gap: 20px;
+  }
 }

@@ -12,11 +12,9 @@
   --footer-shadow: rgb(255 0 112 / 1);
   --tx-shadow: rgb(255 141 203 / 1);
   --border-menu-hover: rgb(50 49 45 / 0.4);
+  --display-rec: none;
 }
 
-.header__text-decor {
-  display: none;
-}
 
 @media (prefers-color-scheme: light) {
 
@@ -33,5 +31,6 @@
     --footer-shadow: rgb(255 0 112 / 1);
     --tx-shadow: rgb(255 141 203 / 1);
     --border-menu-hover: rgb(50 49 45 / 0.4);
-    }
+    --display-rec: none;
   }
+}
