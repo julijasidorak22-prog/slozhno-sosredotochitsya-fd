@@ -30,6 +30,7 @@
   /* Тени */
   --title-shadow: rgb(255 0 112 / 1);
   --footer-shadow: rgb(255 0 112 / 1);
+  --footer-shadow-big: rgb(255 0 112 / 1);
   --tx-shadow: rgb(255 0 112 / 1);
 }
 

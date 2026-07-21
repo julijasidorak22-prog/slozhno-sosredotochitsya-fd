@@ -383,5 +383,6 @@
 
   .footer__content {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    text-shadow: 2px 2px 0 var(--footer-shadow-big);
   }
 }
