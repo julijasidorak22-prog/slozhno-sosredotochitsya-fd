@@ -81,7 +81,7 @@
 
 .header__theme-menu-button {
   background: none;
-  border: none;
+  border: 1px solid transparent;
   outline: 1px solid transparent;
   color: var(--accent-color);
   font-family: inherit;
@@ -125,7 +125,7 @@
   background-color: var(--bg-color-accent);
   color: var(--tx-color-accent);
   font-weight: var(--font-weight-accent);
-  line-height: 23.4px;
+  line-height: 23.2px;
   font-size: var(--font-size, 18px);
 }
 
@@ -159,7 +159,6 @@
 }
 
 .content__subtitle-main {
-  display: grid;
   gap: 20px;
 }
 
@@ -182,7 +181,6 @@
 
 .content__text-link:hover {
   border-bottom: 1px solid var(--tx-color);
-  outline-color: var(--tx-color);
 }
 
 .content__text-link:focus {
@@ -232,13 +230,6 @@
 }
 
 @media (min-width: 768px) {
-  :root {
-    --container-padding: 20px;
-    --gap-rec: 20px;
-    --main-gap: 80px;
-    --gallery-gap: 20px;
-  }
-
   .header {
     min-height: 1024px;
   }
@@ -257,26 +248,17 @@
   }
 
   .content__section-why {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .content__block-why {
     grid-column: 2;
   }
 
-  .content__section-what {
+  .section__title-what {
     display: grid;
     grid-template-columns: 1fr 2fr;
-  }
-
-  .section__title-what {
-    grid-column: 1;
-  }
-
-  .content__block-what {
-    grid-column: 1 / -1;
+    gap: 20px;
   }
 
   .content__section-advice {
@@ -357,16 +339,10 @@
     align-items: start;
   }
 
-  .content__block-concentration {
-    grid-column: 1;
-  }
-
-  .content__block-food {
-    grid-column: 2;
-  }
-
-  .content__block-gadgets {
-    grid-column: 3;
+  .section__title-what {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
   }
 
   .content__section-advice {
